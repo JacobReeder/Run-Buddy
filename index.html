@@ -3,18 +3,15 @@
 
   <head>
       <meta charset="UTF-8" />
+      <link rel="stylesheet" href="./assets/css/style.css">
       <title>Run Buddy</title>
-      <link rel="stylesheet" href="./assets/css/style.css" />
-      
   </head>
 
   <body>
       <!-- navigation -->
     <header>
       <h1>
-        <a href="/">
-          RUN BUDDY
-       </a>
+        <a href="/">RUN BUDDY</a>
       </h1>
       <nav>
        <ul>
@@ -38,7 +35,6 @@
        <!-- hero/jumbotron -->
     <section class="hero">
       <div class="hero-cta">
-        <div class="flex-row">
         <h2>Start Building Habits</h2>
         </div>
         <p>
@@ -66,7 +62,7 @@
             <label for="trainer-no">No</label>
           </p>
           <p>
-            <label for="checkbox" >
+            <label for="checkbox">
               I aknowledge that I am at least 18 years of age.
             </label>
             <input type="checkbox" name="checkpoint1" id="checkbox" />
@@ -78,11 +74,6 @@
       </div>
     </section>
     <!-- end hero -->
-
-    <article class="secondary-content">
-
-    </article>
-
 
     <!-- "what we do" section -->
     <section id="what we do" class="intro">
@@ -105,35 +96,60 @@
           What You Do
         </h2>
       </div>
-
-        <div>
+      <div class="step">
+        <h3>Step 1.</h3>
+        <div class="step-info">
+          <div class="step-img">
           <img src="./assets/images/step-1.svg" alt="Trainer Arron" />
-          <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+        </div>
+        <div class="step-text">
+          <h4>Fill Out the Form Above.</h4>
           <p>You're already here, so why not?</p>
         </div>
-
-        <div>
+      </div>
+    </div>
+    <div class="step">
+      <h3>Step 2.</h3>
+      <div class="step-info">
+        <div class="step-img">
           <img src="./assets/images/step-2.svg" alt="" />
-          <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+        </div>
+        <div class="step-text">
+          <h4>Consult with One of Our Trainers.</h4>
           <p>Are you here to build muscle, lose weight, or just fill good?</p>
         </div>
-
-        <div>
+       </div>
+      </div>
+      <div class="step">
+        <h3>Step 3.</h3>
+        <div class="step-info">
+        <div class="step-img">
           <img src="./assets/images/step-3.svg" alt="" />
-          <h3>Step 3: <span>Get Running.</span></h3>
+        </div>
+        <div class="step-text">
+          <h4>Get Running.</h4>
           <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
         </div>
+      </div>
+    </div>
 
-        <div>
-          <img src="./assets/images/step-4.svg" alt="" />
-          <h3>Step 4: <span>See Results</span></h3>
+        <div class="step">
+          <h3>Step 4.</h3>
+          <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-4.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>See Results</h4>
           <p>Bi-weekly checkins with your trainer will keep you focused.</p>
         </div>
+      </div>
+    </div>
    </section>
 
      <!-- "meet the trainers" section -->
 
-    <section id="your-trainers" class="trainers">
+    <section id="your-trainers">
       <div class="flex-row">
         <h2 class="section-title primary-border">
           Meet The Trainers
@@ -142,40 +158,40 @@
 
        <article class="trainer">
         <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes ready to pump iron" />
-         <div class="trainer-bio text-left">
-           <h3>Arron Stephens</h3>
-           <h4>Speed / Strength</h4>
-           <p>
-
-           </p>
+         <div class="trainer-bio">
+          <h3 class="trainer-name">Arron Stephens</h3>
+          <h4 class="trainer-role">Speed / Strength</h4>
+           <p>fghfgdjfgjfsjfsghfdgjdfgjfgdjfgdjfgjfgjfgdjdfgjdj</p>
          </div>
        </article>
 
     <!-- Second Trainer Info -->
 
      <article class="trainer">
-       <div class="trainer-bio text-right">
-         <h3>Joanna Gill</h3>
-         <h4>Endurance</h4>
+      <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+       <div class="trainer-bio">
+        <h3 class="trainer-name">Joanna Gill</h3>
+        <h4 class="trainer-role">Endurance</h4>
          <p>
 
          </p>
        </div>
-       <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+       
      </article>
 
       <!-- Third Trainer Info -->
 
      <article class="trainer">
-       <div class="trainer-bio text-left">
-       <h3>Harry "The Headband" Smith</h3>
-       <h4>Strength</h4>
+      <img src="./assets/images/trainer-3.jpg" alt="Harry ripping it up" />
+       <div class="trainer-bio">
+        <h3 class="trainer-name">Harry "The Headband" Smith</h3>
+        <h4 class="trainer-role">Strength</h4>
        <p>
 
        </p>
-       </div>
-        <img src="./assets/images/trainer-3.jpg" alt="Harry ripping it up" />
-     </article>
+      </div>
+    </article>
+  </div>
    </section>
    
       <!-- "reach out" section -->
@@ -186,13 +202,25 @@
       </h2>
     </div>
 
-     <div class="contact-info">
-       <iframe
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.011386396213!2d-122.25336658859959!3d37.81320227975238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8744df44240f%3A0xf25a4103e43b0206!2s345%20MacArthur%20Blvd!5e0!3m2!1sen!2sus!4v1643431494013!5m2!1sen!2sus"
-         frameborder="0" style="border:0;" allowfullscreen>
-        </iframe>
+    <div class="contact-info">
+      <div>
+        <h3>Run Buddy</h3>
+        <p>Any questions or concerns before signing up?
+           <br />
+            Let us know and we'll be happy to talk to you!
+         </p>
 
-        <div class="contact-form">
+          <address>
+          55 Main Street <br/>
+          Some Town, CA <br/>
+          12345<br/>
+          P: 555.RUN.BUDZ (555.786.2839)<br/>
+          E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+       </address>
+   
+      </div>
+      
+      <div class="contact-form">
           <h3>Contact Us</h3>
           <form>
             <label for="contact-form">Your Name</label>
@@ -205,23 +233,11 @@
           </form>
        </div>
 
-       <div>
-       <h3>Run Buddy</h3>
-       <p>Any questions or concerns before signing up?
-         <br />
-         Let us know and we'll be happy to talk to you!
-       </p>
-       <address>
-         55 Main Street <br/>
-         Some Town, CA <br/>
-         12345<br/>
-         P: 555.RUN.BUDZ (555.786.2839)<br/>
-         E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-       </address>
-     
+       <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.011386396213!2d-122.25336658859959!3d37.81320227975238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8744df44240f%3A0xf25a4103e43b0206!2s345%20MacArthur%20Blvd!5e0!3m2!1sen!2sus!4v1643431494013!5m2!1sen!2sus"
+         frameborder="0" style="border:0;" allowfullscreen>
+        </iframe>
       </div>
-   </div>
-
    </section>
   
    <!-- footer -->
@@ -232,6 +248,6 @@
       &copy; 2019 Run Buddy, Inc.
     </div>
    </footer>
- </body>
 
+  </body>
 </html>
