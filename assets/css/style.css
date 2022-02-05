@@ -12,9 +12,8 @@ body {
 
    /* HEADER / NAV BAR */
 header {
-    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
-    background-size: cover;
-    background-position: center;
+   
+    
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
@@ -23,6 +22,8 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
  }
@@ -54,10 +55,10 @@ header {
  }
 
  header nav ul li a {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
      margin: 10px 15px;
      font-weight: lighter;
      font-size: 1.55vw;
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  }
 
  header nav ul li a:hover {
@@ -146,6 +147,10 @@ section {
      border-radius: 15px;
  }
 
+ .hero-form button:hover {
+    background-color: #39a6b2;
+}
+
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
@@ -167,13 +172,13 @@ section {
      background-color: rgba(255,255,255, 0.75);
 }
 
+
 .form-input:focus {
        background-color: rgba(255,255,255, 1);
        outline: none;
 }
 
-
- .hero-form label {
+.hero-form label {
      margin: 0 5px;
  
 }
@@ -188,9 +193,6 @@ section {
     
 }
 
-.hero-form button:hover {
-    background-color: #39a6b2;
-}
 
 
 /* Hero styles end */
@@ -206,8 +208,6 @@ section {
     margin: 0 auto 35px auto;
     width: 50%;
 }
-
-
 
 .primary-border {
     border-color: #fce138;
@@ -249,8 +249,8 @@ section {
 
 }
 
-.step:not(:last-child) {
-    border-bottom: 1px solid #39a6b2;
+.step:last-child {
+    border-bottom: none;
 }
 
 .step h3 {
@@ -305,34 +305,34 @@ section {
 }
 
 .trainer {
-        width: 20px;
-        flex: 1;
-        background: #024e76;
-        color: #fce138;
+    width: 20px;
+    flex: 1;
+    background: #024e76;
+    color: #fce138;
 }
 
 .trainer img {
-        width: 100;
+    width: 100;
 }
 
 .trainer-bio {
-        padding: 25px;
-        line-height: 1.3
+    padding: 25px;
+    line-height: 1.3
     
 }
 
 .trainer-bio h3 {
-        font-size: 28px;
+    font-size: 28px;
 }
 
 .trainer-bio h4 {
-        font-weight: lighter;
-        font-size: 22px;
-        margin-bottom: 15x;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15x;
 }
 
 .trainer-bio p {
-        font-size: 17px;
+    font-size: 17px;
 }
 
     /* TRAINER STYLES END */
@@ -381,7 +381,6 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
-        background-color: rgba(255,255,255, 0.75);
         border: 1px solid #024e76;
         display: block;
         padding: 7px 15px;
@@ -391,10 +390,12 @@ section {
         margin-bottom: 15px;
         margin-top: 5px;
         border-radius: 10px;
+        background-color: rgba(255,255,255, 0.75);
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
        background-color: rgba(255,255,255, 1);
+       outline: none;
 }
       
 .contact-form button {
@@ -513,6 +514,10 @@ footer h2, footer div {
     .step-text {
         flex: 100%;
     }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
+      }
 
           
 } 
