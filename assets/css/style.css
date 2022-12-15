@@ -32,6 +32,7 @@ header {
  }
 
  header nav {
+    float: right;
      margin: 7px 0;
  }
 
@@ -44,9 +45,9 @@ header {
  }
 
  header nav ul li a {
-     margin: 10px 15px;
+     margin: 0px 30px;
      font-weight: lighter;
-     font-size: 1.55vw;
+     font-size: 22px;
  }
 
  /* HEADER NAVBAR STYLES END */
@@ -69,6 +70,7 @@ header {
  }
 
  footer div {
+    float: right;
      line-height: 1.5;
      text-align: right;
  }
@@ -98,9 +100,10 @@ header {
     
  }
 
+ /* TODO: ADD FLEXBOX*/
 .hero-cta {
     width: 35%;
-    text-align: right;
+    text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
@@ -203,7 +206,7 @@ header {
 
 .step {
     margin: 50px auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     width: 80%;
     border-bottom: 1px solid #39a6b2;
     display: flex;
